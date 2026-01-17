@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio | DevKey Tech</title>
+  <link rel="stylesheet" href="../assets/css/portfolio.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="container nav-wrap">
+      <a class="brand" href="../index.html">
+        <img src="../assets/images/logo.png" alt="DevKey Tech Logo" class="logo" />
+        <span>DevKey Tech</span>
+      </a>
+
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="../index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a class="active" href="portfolio.html">Portfolio</a>
+        <a href="contact.html" class="btn small">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- SECTION 1: HERO -->
+  <section class="page-hero">
+    <div class="container hero-inner">
+      <div class="reveal">
+        <p class="pill">Portfolio</p>
+        <h1>Our work speaks for itself.</h1>
+        <p class="sub">
+          Explore a selection of our recent projects across web, mobile, desktop, and AI automation.
+        </p>
+      </div>
+
+      <div class="hero-card reveal">
+        <img src="../assets/images/portfolio-hero1.jpg" alt="Portfolio Showcase" />
+        <div class="hero-card-overlay">
+          <h4>Real projects. Real results.</h4>
+          <p>Built with modern UI, scalable backend, and clean code.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 2: FILTER BAR -->
+  <section class="section">
+    <div class="container">
+      <div class="filters reveal">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="web">Web</button>
+        <button class="filter-btn" data-filter="mobile">Mobile</button>
+        <button class="filter-btn" data-filter="desktop">Desktop</button>
+        <button class="filter-btn" data-filter="ai">AI Automation</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 3: PROJECT GRID -->
+  <section class="section alt">
+    <div class="container">
+      <div class="section-head reveal">
+        <h2>Featured Projects</h2>
+        <p>Some of our selected work and solutions.</p>
+      </div>
+
+      <div class="portfolio-grid" id="portfolioGrid">
+
+        <!-- Web -->
+        <article class="p-card reveal" data-category="web">
+          <img src="../assets/images/portfolio-1.jpg" alt="Business ERP Dashboard" />
+          <div class="p-body">
+            <span class="tag">Web</span>
+            <h3>Business ERP Dashboard</h3>
+            <p>SB Admin 2 based ERP modules for trading operations.</p>
+          </div>
+        </article>
+
+        <!-- Mobile -->
+        <article class="p-card reveal" data-category="mobile">
+          <img src="../assets/images/portfolio-2.jpg" alt="Mobile Health Tracker" />
+          <div class="p-body">
+            <span class="tag">Mobile</span>
+            <h3>Mobile Health Tracker</h3>
+            <p>Flutter app with responsive UI and cloud data.</p>
+          </div>
+        </article>
+
+        <!-- AI -->
+        <article class="p-card reveal" data-category="ai">
+          <img src="../assets/images/portfolio-3.jpg" alt="AI Customer Support" />
+          <div class="p-body">
+            <span class="tag">AI</span>
+            <h3>AI Customer Support</h3>
+            <p>Automation chatbot + knowledge base integration.</p>
+          </div>
+        </article>
+
+        <!-- More samples -->
+        <article class="p-card reveal" data-category="web">
+          <img src="../assets/images/portfolio-4.jpg" alt="Company Website" />
+          <div class="p-body">
+            <span class="tag">Web</span>
+            <h3>Corporate Website</h3>
+            <p>Fast landing page, SEO-ready, and responsive design.</p>
+          </div>
+        </article>
+
+        <article class="p-card reveal" data-category="desktop">
+          <img src="../assets/images/portfolio-5.jpg" alt="Desktop Tool" />
+          <div class="p-body">
+            <span class="tag">Desktop</span>
+            <h3>Desktop Management Tool</h3>
+            <p>Internal workflow tool with reports and data export.</p>
+          </div>
+        </article>
+
+        <article class="p-card reveal" data-category="mobile">
+          <img src="../assets/images/portfolio-6.jpg" alt="Ecommerce App" />
+          <div class="p-body">
+            <span class="tag">Mobile</span>
+            <h3>E-Commerce App</h3>
+            <p>Product browsing, cart, checkout, and order tracking.</p>
+          </div>
+        </article>
+
+        <article class="p-card reveal" data-category="ai">
+          <img src="../assets/images/portfolio-7.jpg" alt="AI Workflow Automation" />
+          <div class="p-body">
+            <span class="tag">AI</span>
+            <h3>AI Workflow Automation</h3>
+            <p>Smart automation for repetitive tasks and routing.</p>
+          </div>
+        </article>
+
+        <article class="p-card reveal" data-category="web">
+          <img src="../assets/images/portfolio-8.jpg" alt="Admin Panel" />
+          <div class="p-body">
+            <span class="tag">Web</span>
+            <h3>Admin Panel</h3>
+            <p>User roles, reporting, and secure API integration.</p>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 4: SHORT CASE STUDY STRIP -->
+  <section class="section">
+    <div class="container">
+      <div class="case-strip reveal">
+        <div>
+          <h2>Need something similar?</h2>
+          <p>We can build a solution tailored to your business requirements.</p>
+        </div>
+        <a class="btn" href="contact.html">Request a Quote</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 5: CTA -->
+  <section class="section">
+    <div class="container">
+      <div class="cta-strip reveal">
+        <div>
+          <h2>Let’s build your next project</h2>
+          <p>Tell us your idea and get a free consultation.</p>
+        </div>
+        <a class="btn" href="contact.html">Contact Us</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-wrap">
+      <div>
+        <h3>DevKey Tech</h3>
+        <p>Software House — Web, App, Desktop & AI Solutions.</p>
+      </div>
+      <div class="footer-links">
+        <a href="../index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+    <div class="copy">© <span id="year"></span> DevKey Tech. All rights reserved.</div>
+  </footer>
+
+  <!-- Filter Script (small) -->
+  <script>
+    const buttons = document.querySelectorAll(".filter-btn");
+    const cards = document.querySelectorAll(".p-card");
+
+    buttons.forEach(btn => {
+      btn.addEventListener("click", () => {
+        buttons.forEach(b => b.classList.remove("active"));
+        btn.classList.add("active");
+
+        const filter = btn.dataset.filter;
+
+        cards.forEach(card => {
+          const category = card.dataset.category;
+          const show = (filter === "all" || category === filter);
+          card.style.display = show ? "flex" : "none";
+        });
+      });
+    });
+  </script>
+
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>
